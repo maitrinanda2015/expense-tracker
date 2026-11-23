@@ -1,0 +1,22 @@
+# Render Blueprint for the API. In Render: New -> Blueprint -> pick this repo.
+# Fill in MONGODB_URI and CLIENT_ORIGIN when prompted.
+services:
+  - type: web
+    name: expense-tracker-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 1d
+      - key: CLIENT_ORIGIN
+        sync: false

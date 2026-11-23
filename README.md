@@ -4,7 +4,7 @@ A full-stack personal finance app. You can record income and expenses across sev
 
 - **Live app:** https://expense-tracker-six-sand-70.vercel.app
 - **API:** https://expense-tracker-api-9d8j.onrender.com/api (health check: [`/api/health`](https://expense-tracker-api-9d8j.onrender.com/api/health))
-- **Demo login:** `demo@example.com` / `demo12345`, or register your own account.
+- **Try it:** register a new account on the live app.
 
 > The API runs on Render's free plan and sleeps when idle, so the **first request can take ~50 seconds** while it wakes up. After that it responds normally.
 

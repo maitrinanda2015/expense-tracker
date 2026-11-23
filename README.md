@@ -2,9 +2,11 @@
 
 A full-stack personal finance app. You can record income and expenses across several accounts, set monthly budgets with warnings, automate recurring transactions, track savings goals, and analyse your spending with charts. Every figure is computed from transactions stored in MongoDB.
 
-- **Live app:** _add the frontend URL after deploying_
-- **API:** _add the backend URL after deploying_ (health check: `GET /api/health`)
-- **Demo login (after running the seed):** `demo@example.com` / `demo12345`
+- **Live app:** https://expense-tracker-six-sand-70.vercel.app
+- **API:** https://expense-tracker-api-9d8j.onrender.com/api (health check: [`/api/health`](https://expense-tracker-api-9d8j.onrender.com/api/health))
+- **Demo login:** `demo@example.com` / `demo12345`, or register your own account.
+
+> The API runs on Render's free plan and sleeps when idle, so the **first request can take ~50 seconds** while it wakes up. After that it responds normally.
 
 ---
 
